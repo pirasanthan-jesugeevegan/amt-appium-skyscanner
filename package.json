@@ -1,0 +1,38 @@
+{
+  "name": "amt-appium-skyscanner",
+  "version": "1.0.0",
+   "description": "Running WebdriverIO tests with Appium to test Skyscanner native application",
+  "main": "index.js",
+  "scripts": {
+    "android.app": "./node_modules/.bin/wdio ./config/wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirasanthan-jesugeevegan/amt-appium-skyscanner.git"
+  },
+   "keywords": [
+    "WebdriverIO",
+    "WebDriver",
+    "appium",
+    "native app",
+    "hybrid",
+    "android"
+  ],
+  "author": "Pirasanthan Jesugeevegan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pirasanthan-jesugeevegan/amt-appium-skyscanner/issues"
+  },
+  "homepage": "https://github.com/pirasanthan-jesugeevegan/amt-appium-skyscanner#readme",
+   "dependencies": {
+    "@wdio/cli": "^5.16.10"
+  },
+  "devDependencies": {
+    "@wdio/appium-service": "^6.1.16",
+    "@wdio/local-runner": "^5.16.10",
+    "@wdio/mocha-framework": "^5.16.10",
+    "@wdio/spec-reporter": "^5.16.5",
+    "@wdio/sync": "^5.16.10",
+     "chai": "^4.2.0"
+  }
+}
