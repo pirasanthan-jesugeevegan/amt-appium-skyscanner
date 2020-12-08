@@ -18,8 +18,8 @@ config.capabilities = [
     'appium:orientation': 'PORTRAIT',
     // The path to the app
     'appium:app': join(process.cwd(), './app/skyscanner.apk'),
-     'noReset': false,
-    'appWaitActivity': 'net.skyscanner*'
+    noReset: false,
+    appWaitActivity: 'net.skyscanner*',
   },
 ];
 

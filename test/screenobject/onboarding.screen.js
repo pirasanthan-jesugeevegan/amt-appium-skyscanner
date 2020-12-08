@@ -56,5 +56,10 @@ class Onboarding {
     const msg = this.subTitle.getText();
     return msg;
   }
+
+  OnboardingSession () {
+    this.accept.click();
+    this.later.click();
+  }
 }
 export default new Onboarding();
