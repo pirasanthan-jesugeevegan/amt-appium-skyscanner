@@ -38,7 +38,7 @@ config.capabilities  =  [
        platformName:  'Android',
        maxInstances:  1,
        'appium:deviceName':  '<DEVICE_NAME>',
-       'appium:orientation':  '<ORIENTATIO>',
+       'appium:orientation':  '<ORIENTATION>',
        // The path to the app
        'appium:app':  join(process.cwd(),  '<APP_LOCATION>'),
        noReset:  false,
