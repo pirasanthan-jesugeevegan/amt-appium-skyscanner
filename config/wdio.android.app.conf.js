@@ -4,7 +4,7 @@ const { config } = require('./wdio.shared.conf');
 // ============
 // Specs
 // ============
-config.specs = ['./test/specs/**/*.spec.js'];
+config.specs = ['./test/specs/**/onboarding.spec.js'];
 
 // ============
 // Capabilities

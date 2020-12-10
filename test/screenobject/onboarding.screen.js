@@ -6,6 +6,10 @@ class Onboarding {
   get policyDisclaimer () { return $('//android.widget.TextView[@resource-id="net.skyscanner.android.main:id/privacy_policy_cookie_policy_disclaimer"]'); }
   get accept () { return $('//android.widget.Button[@resource-id="net.skyscanner.android.main:id/privacy_policy_accept_button"]'); }
   get manageSettings () { return $('//android.widget.Button[@resource-id="net.skyscanner.android.main:id/privacy_policy_manage_settings_button"]'); }
+  get backButton () { return $('//android.widget.ImageButton[@elementId="821216c5-9fec-4164-992b-2b59154308e2"]'); }
+  get optimizationSwitch () { return $('//android.widget.Switch[@resource-id="net.skyscanner.android.main:id/optimization_switch"]'); }
+  get adsSwitch () { return $('//android.widget.Switch[@resource-id="net.skyscanner.android.main:id/personalized_ads_switch"]'); }
+  get saveSettingButton () { return $('//android.widget.Button[@resource-id="net.skyscanner.android.main:id/save_settings_button"]'); }
   // Main Login Screen
   get titleLogin () { return $('//android.widget.TextView[@resource-id="net.skyscanner.android.main:id/login_selection_title"]'); }
   get subTitle () { return $('//android.widget.TextView[@resource-id="net.skyscanner.android.main:id/login_selection_subtitle"]'); }
@@ -30,31 +34,6 @@ class Onboarding {
     this.google.isDisplayed();
     this.facebook.isDisplayed();
     this.later.isDisplayed();
-  }
-
-  getDes () {
-    const msg = this.policyDescription.getText();
-    return msg;
-  }
-
-  getPolicyTitle () {
-    const msg = this.titlePolicy.getText();
-    return msg;
-  }
-
-  getDisclaimer () {
-    const msg = this.policyDisclaimer.getText();
-    return msg;
-  }
-
-  getLoginTitle () {
-    const msg = this.titleLogin.getText();
-    return msg;
-  }
-
-  getLoginSubTitle () {
-    const msg = this.subTitle.getText();
-    return msg;
   }
 
   OnboardingSession () {
