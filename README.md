@@ -2,7 +2,7 @@
  <img src="https://journey.symphonyoflove.net/wp-content/uploads/2019/09/Skyscanner-new-Logo.png" />
 
  </p>
-<h1 align="center">SkyScanner </h1>
+<h1 align="center">Skyscanner | Appium | Webdriver </h1>
 
 This is a task to Automate the Skyscanner Native App using Appium and Webdriver, Please see below for the Test Case that are automated 
 
