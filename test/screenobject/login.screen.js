@@ -13,6 +13,9 @@ class Login {
   get passwordIcon () { return $('//android.widget.ImageButton[@resource-id="net.skyscanner.android.main:id/password_icon"]'); }
   get forgotPassword () { return $('//android.widget.ImageButton[@resource-id="net.skyscanner.android.main:id/forgot_password_button"]'); }
   get signInButton () { return $('//android.widget.Button[@resource-id="net.skyscanner.android.main:id/next_button"]'); }
+  get loginSucessfulyText () { return $('//android.widget.TextView[@resource-id="net.skyscanner.android.main:id/login_finished_title"]'); }
+  get errorIcon () { return $('//android.widget.ImageView[@resource-id="net.skyscanner.android.main:id/login_error_image_view"]'); }
+  get errorMessage () { return $('//android.widget.TextView[@resource-id="net.skyscanner.android.main:id/login_error_title"]'); }
 
   emailElementVisiable () {
     this.emailTitle.isDisplayed();
@@ -30,6 +33,12 @@ class Login {
     this.passwordIcon.isDisplayed();
     this.forgotPassword.isDisplayed();
     this.signInButton.isDisplayed();
+  }
+
+  error () {
+    this.errorIcon.isDisplayed();
+    const msg = this.errorMessage.getText();
+    return msg;
   }
 }
 export default new Login();

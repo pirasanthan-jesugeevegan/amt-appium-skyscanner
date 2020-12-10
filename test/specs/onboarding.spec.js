@@ -1,7 +1,8 @@
 import { expect } from 'chai';
 import Onboarding from '../screenobject/onboarding.screen';
 import { getText } from '../helpers/utils';
-describe('Onboarding', () => {
+
+describe('Onboarding Screen', () => {
   it('TC1 - Verifiy that the onboarding contains necessary elements', () => {
     Onboarding.policyElementVisiable();
     expect(getText(Onboarding.titlePolicy)).equal('Your data. Your choice.');
